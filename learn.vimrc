@@ -33,11 +33,12 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 " Plugins for vim-plug to install.
-" If this is your first time using this .vimrc on your machine, just run
-" :PlugInstall! The above block will have installed vim-plug, and the below
-" block will tell vim-plug which plugins to install.
+"The above block will have installed vim-plug, and the below block will tell vim-plug which plugins to install.
 "
-" The following plugins are helpful for visually parsing JS and HTML.
+" The following plugins are helpful for visually parsing JS and HTML, so uncomment their 'Plug' lines if web development is your THING.
+
+" Add whatever plugins you like, but I recommend ONLY installing plugins that VISUALLY change vim, not change the
+" behavior. The point is to learn the behavior!
 call plug#begin()
   " better syntax coloration for javascript
   " Plug 'jelera/vim-javascript-syntax'
