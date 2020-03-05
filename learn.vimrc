@@ -48,21 +48,25 @@ call plug#begin()
   " Plug 'ap/vim-css-color'
 call plug#end()
 
-" sets the rainbow plugin to on by default--set to 0 if you want to enable it later via :RainbowToggle:
-let g:rainbow_active = 1
+" sets the rainbow plugin to on by default--set to 0 if you want to enable it
+" later via :RainbowToggle.
+" Either way, comment it back in if you install rainbow, and delete it if you
+" don't want it.
+" let g:rainbow_active = 1
 
-" sets the rainbow plugin NOT to color html tags by depth.
-" I find this very visually confusing.
-" Feel free to try commenting out the following block and deleting if you find
-" you like the effect!
+" The below block sets the rainbow plugin NOT to color html tags by depth.
+" I find the effect very visually confusing.
+" If you want to see what that looks like--and maybe you'll like how it
+" handles tags!--leave it commented out when you install the rainbow plugin.
+" And if you're not using the rainbow plugin at all, delete the block entirely.
 " 
 " This is as good a time as any to remind you to both label any additions you
 " make--so you know three weeks later what the line you added does!--and remove commneted out code that you decided you don't want.
-let g:rainbow_conf = {
-\  'separately': {
-\    'html': 0
-\  }
-\}
+" let g:rainbow_conf = {
+" \  'separately': {
+" \    'html': 0
+" \  }
+" \}
 
 
 set number
