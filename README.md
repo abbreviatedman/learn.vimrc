@@ -1,11 +1,11 @@
 # learn.vimrc
 
-An attempt to make a .vimrc that's useful for learning vim.
+An attempt to make a `.vimrc` configuration file that helpful for those beginning to learn `vim.`
 
 
 ### Principles
 
-1. It should make vim prettier and easier to parse.
-2. It should NOT change any of the fundamental behaviors of vim. The point is to learn the core language.
+1. It should make `vim` prettier and easier to parse for those new to its look.
+2. It should NOT change any of the fundamental behaviors of `vim`. The point is to learn the core language.
 3. The only behavioral change is a handful of key mappings, which are small enough in number to quickly set for the session if you sit down at a strange computer.
-4. But no leader key mappings that obscure the commands they stand in for. Understand what you're shortcutting for before you efficentize everything!
+4. But no leader-key mappings or plug-ins that obscure the commands they stand in for. Understand _what_ you're shortcutting for before you trim out the unnecessary keystrokes!
