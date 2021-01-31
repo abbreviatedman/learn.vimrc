@@ -52,16 +52,17 @@ call plug#end()
 " later via :RainbowToggle.
 " Either way, comment it back in if you install rainbow, and delete it if you
 " don't want it.
+" Don't leave commented-out code lying around!
 " let g:rainbow_active = 1
 
 " The below block sets the rainbow plugin NOT to color html tags by depth.
 " I find the effect very visually confusing.
 " If you want to see what that looks like--and maybe you'll like how it
-" handles tags!--leave it commented out when you install the rainbow plugin.
+" handles tags!--comment it back in when you install the rainbow plugin.
 " And if you're not using the rainbow plugin at all, delete the block entirely.
 " 
 " This is as good a time as any to remind you to both label any additions you
-" make--so you know three weeks later what the line you added does!--and remove commneted out code that you decided you don't want.
+" make--so you know three weeks later what the line you added does!--and remove commented-out code that you decided you don't want.
 " let g:rainbow_conf = {
 " \  'separately': {
 " \    'html': 0
@@ -97,11 +98,18 @@ set splitbelow
 
 syntax on
 filetype plugin on
-" packadd vimball
 
-" mappings
+""" mappings
+" Makes "ii" in insert mode bring you backto normal mode.
+" Useful for those who haven't mapped their escape key to be easier to reach.
+" Some people prefer "jk" instead. Whatever works for you!
 inoremap ii <Esc>
+" Switches 0 and ^. They're both useful, but people prefer ^ usually, and
+" it's harder to reach than 0, so it can be useful to switch them.
 nnoremap 0 ^
 nnoremap ^ 0
+
+" In the same way, most people use : more often than ;, so might as well
+" save yourself the shift keystroke.
 nnoremap : ;
 nnoremap ; :
